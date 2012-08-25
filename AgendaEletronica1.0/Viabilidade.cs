@@ -15,5 +15,16 @@ namespace AgendaEletronica1._0
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja fechar o Programa?", "???", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == (DialogResult.Yes))
+                Application.Exit();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
