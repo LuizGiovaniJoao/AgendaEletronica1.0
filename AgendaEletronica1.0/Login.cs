@@ -18,8 +18,25 @@ namespace AgendaEletronica1._0
 
         private void btEntrar_Click(object sender, EventArgs e)
         {
-            Viabilidade abrir = new Viabilidade();
-            abrir.Show();
+            if ((txtNome.Text == "Marcos" || txtNome.Text == "Giovani" || txtNome.Text == "Joao") && (txtSenha.Text == "123"))
+            {
+                   Viabilidade abrir = new Viabilidade();
+                   abrir.Show();
+            }
+            else
+            {
+                MessageBox.Show("Usuário não cadastrado", "Espertinho!!");
+                txtNome.Focus();
+                txtNome.Text = "";
+                txtSenha.Text = "";
+            }
+
+        }
+
+        private void btSair_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Deseja fechar o Programa?","???",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == (DialogResult.Yes))
+            Application.Exit();
         }
     }
 }
