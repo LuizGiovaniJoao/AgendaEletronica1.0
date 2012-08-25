@@ -15,5 +15,11 @@ namespace AgendaEletronica1._0
         {
             InitializeComponent();
         }
+
+        private void btPesquisa_Click(object sender, EventArgs e)
+        {
+            Pesquisa abrir = new Pesquisa();
+            abrir.Show();
+        }
     }
 }

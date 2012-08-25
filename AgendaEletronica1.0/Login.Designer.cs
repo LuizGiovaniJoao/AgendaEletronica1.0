@@ -33,7 +33,7 @@
             // 
             // btEntrar
             // 
-            this.btEntrar.Location = new System.Drawing.Point(113, 179);
+            this.btEntrar.Location = new System.Drawing.Point(169, 210);
             this.btEntrar.Name = "btEntrar";
             this.btEntrar.Size = new System.Drawing.Size(75, 23);
             this.btEntrar.TabIndex = 0;

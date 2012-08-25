@@ -37,8 +37,9 @@
             this.btPesquisa.Name = "btPesquisa";
             this.btPesquisa.Size = new System.Drawing.Size(75, 23);
             this.btPesquisa.TabIndex = 0;
-            this.btPesquisa.Text = "button1";
+            this.btPesquisa.Text = "Pesquisar";
             this.btPesquisa.UseVisualStyleBackColor = true;
+            this.btPesquisa.Click += new System.EventHandler(this.btPesquisa_Click);
             // 
             // Viabilidade
             // 
