@@ -15,10 +15,27 @@ namespace AgendaEletronica1._0
         {
             InitializeComponent();
         }
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja fechar o Programa?", "???", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == (DialogResult.Yes))
+                Application.Exit();
+        }
 
-        private void btPesquisa_Click(object sender, EventArgs e)
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btPesquisa_Click_1(object sender, EventArgs e)
         {
             Pesquisa abrir = new Pesquisa();
+            abrir.Show();
+        }
+
+        private void btNovoContato_Click(object sender, EventArgs e)
+        {
+            Cadastrar abrir = new Cadastrar();
             abrir.Show();
         }
     }

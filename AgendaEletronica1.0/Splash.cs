@@ -16,9 +16,19 @@ namespace AgendaEletronica1._0
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            
+            if (progressBar1.Value < 100)
+            {
+                progressBar1.Value = progressBar1.Value + 2;
+            }
+            else
+            {
+                timer1.Enabled = false;
+                Login s = new Login();
+                s.Show();
+                this.Visible = false;
+            }
         }
     }
 }
