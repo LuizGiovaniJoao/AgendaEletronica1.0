@@ -44,13 +44,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtTipo = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.listBox4 = new System.Windows.Forms.ListBox();
-            this.listBox5 = new System.Windows.Forms.ListBox();
-            this.listBox6 = new System.Windows.Forms.ListBox();
-            this.listBox7 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // txtcelular
@@ -194,81 +187,11 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(4, 295);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(75, 95);
-            this.listBox1.TabIndex = 28;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox7_SelectedIndexChanged);
-            // 
-            // listBox2
-            // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(61, 295);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(87, 95);
-            this.listBox2.TabIndex = 29;
-            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox7_SelectedIndexChanged);
-            // 
-            // listBox3
-            // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.Location = new System.Drawing.Point(113, 295);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(87, 95);
-            this.listBox3.TabIndex = 30;
-            this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox7_SelectedIndexChanged);
-            // 
-            // listBox4
-            // 
-            this.listBox4.FormattingEnabled = true;
-            this.listBox4.Location = new System.Drawing.Point(182, 295);
-            this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(87, 95);
-            this.listBox4.TabIndex = 31;
-            this.listBox4.SelectedIndexChanged += new System.EventHandler(this.listBox7_SelectedIndexChanged);
-            // 
-            // listBox5
-            // 
-            this.listBox5.FormattingEnabled = true;
-            this.listBox5.Location = new System.Drawing.Point(231, 295);
-            this.listBox5.Name = "listBox5";
-            this.listBox5.Size = new System.Drawing.Size(87, 95);
-            this.listBox5.TabIndex = 32;
-            this.listBox5.SelectedIndexChanged += new System.EventHandler(this.listBox7_SelectedIndexChanged);
-            // 
-            // listBox6
-            // 
-            this.listBox6.FormattingEnabled = true;
-            this.listBox6.Location = new System.Drawing.Point(288, 295);
-            this.listBox6.Name = "listBox6";
-            this.listBox6.Size = new System.Drawing.Size(87, 95);
-            this.listBox6.TabIndex = 33;
-            this.listBox6.SelectedIndexChanged += new System.EventHandler(this.listBox7_SelectedIndexChanged);
-            // 
-            // listBox7
-            // 
-            this.listBox7.FormattingEnabled = true;
-            this.listBox7.Location = new System.Drawing.Point(336, 295);
-            this.listBox7.Name = "listBox7";
-            this.listBox7.Size = new System.Drawing.Size(87, 95);
-            this.listBox7.TabIndex = 34;
-            this.listBox7.SelectedIndexChanged += new System.EventHandler(this.listBox7_SelectedIndexChanged);
-            // 
             // Cadastrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(414, 402);
-            this.Controls.Add(this.listBox7);
-            this.Controls.Add(this.listBox6);
-            this.Controls.Add(this.listBox5);
-            this.Controls.Add(this.listBox4);
-            this.Controls.Add(this.listBox3);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
+            this.ClientSize = new System.Drawing.Size(414, 283);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtTipo);
             this.Controls.Add(this.label7);
@@ -311,12 +234,5 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox txtTipo;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.ListBox listBox4;
-        private System.Windows.Forms.ListBox listBox5;
-        private System.Windows.Forms.ListBox listBox6;
-        private System.Windows.Forms.ListBox listBox7;
     }
 }
