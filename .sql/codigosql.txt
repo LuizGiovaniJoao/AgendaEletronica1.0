@@ -1,5 +1,22 @@
-CREATE DATABASE CONTATOS
+CREATE DATABASE Database1;
 GO
 
-USE CONTATOS
+USE DataBase1;
+go
+
+CREATE TABLE Contatos(
+	Id INT NOT NULL PRIMARY KEY,
+	Nome VARCHAR(50) NOT NULL,
+	Email VARCHAR(50),
+	Telefone1 VARCHAR(20) NOT NULL,
+	Telefone2 VARCHAR(20),
+	Celular VARCHAR(20),
+	Tipo nchar(10)
+);
 GO
+
+INSERT INTO Contatos VALUES(
+     1, 'Giovani Aparecido Santos de Lima', 'giovani_asl@hotmail.com', 
+         '(12)9702-4832', '', '', 'Amigos');
+GO
+	
