@@ -38,5 +38,27 @@ namespace AgendaEletronica1._0
             if(MessageBox.Show("Deseja fechar o Programa?","???",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == (DialogResult.Yes))
             Application.Exit();
         }
+
+        private void txtSenha_Enter(object sender, EventArgs e)
+        {
+            if (sender is TextBox)
+            {
+                TextBox CorFundo = (TextBox)sender;
+                if (CorFundo.BackColor == SystemColors.Window)
+                {
+                    CorFundo.BackColor = SystemColors.ControlLight;
+                }
+            }
+        }
+
+        private void txtSenha_Leave(object sender, EventArgs e)
+        {
+            TextBox CorFundo = (TextBox)sender;
+            if(sender is TextBox)
+            {
+                CorFundo.BackColor = SystemColors.Window;
+            }
+        }
+
     }
 }

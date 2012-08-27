@@ -13,17 +13,14 @@ namespace AgendaEletronica1._0
 {
     public partial class Pesquisa : Form
     {
+        // Ligação com o banco de dados.
         SqlConnection conexao = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\AgendaEletronica1.0\AgendaEletronica1.0\Database1.mdf;Integrated Security=True;User Instance=True");
         SqlCommand comando = new SqlCommand();
         SqlDataReader LerDados;
+        
         public Pesquisa()
         {
             InitializeComponent();
-        }
-
-        private void listBox7_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void Pesquisa_Load(object sender, EventArgs e)
@@ -32,6 +29,7 @@ namespace AgendaEletronica1._0
             loadlist();
         }
 
+        // Apresentar os registros da pesquisa desejada.
         public void loadlist()
         {
             listBox1.Items.Clear();

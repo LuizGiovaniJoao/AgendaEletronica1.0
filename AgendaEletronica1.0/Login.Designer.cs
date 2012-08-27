@@ -39,7 +39,6 @@
             // btEntrar
             // 
             this.btEntrar.Location = new System.Drawing.Point(49, 179);
-
             this.btEntrar.Name = "btEntrar";
             this.btEntrar.Size = new System.Drawing.Size(75, 23);
             this.btEntrar.TabIndex = 3;
@@ -71,6 +70,8 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(100, 20);
             this.txtNome.TabIndex = 1;
+            this.txtNome.Enter += new System.EventHandler(this.txtSenha_Enter);
+            this.txtNome.Leave += new System.EventHandler(this.txtSenha_Leave);
             // 
             // txtSenha
             // 
@@ -78,6 +79,8 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(100, 20);
             this.txtSenha.TabIndex = 2;
+            this.txtSenha.Enter += new System.EventHandler(this.txtSenha_Enter);
+            this.txtSenha.Leave += new System.EventHandler(this.txtSenha_Leave);
             // 
             // btSair
             // 

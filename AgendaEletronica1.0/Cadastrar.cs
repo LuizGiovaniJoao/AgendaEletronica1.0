@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+
 // Provedor de dados do .NET Framework para SQL Server.
 using System.Data.SqlClient;
 //
@@ -14,6 +15,7 @@ namespace AgendaEletronica1._0
 {
     public partial class Cadastrar : Form
     {
+        // Ligação com o banco de dados.
         SqlConnection conexao = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\AgendaEletronica1.0\AgendaEletronica1.0\Database1.mdf;Integrated Security=True;User Instance=True");
         SqlCommand comando = new SqlCommand();
         //SqlDataReader LerDados;
@@ -23,6 +25,7 @@ namespace AgendaEletronica1._0
             InitializeComponent();
         }
 
+        // Verifica se já se iniciou o cadastro.
         private void button1_Click(object sender, EventArgs e)
         {
             if (txtId.Text == "" & txtNome.Text == "" & txttelefone1.Text == "")
@@ -44,6 +47,7 @@ namespace AgendaEletronica1._0
             comando.Connection = conexao;
         }
 
+        // Método para Cadastrar um contato.
         private void btCadastrar_Click(object sender, EventArgs e)
         {
             if (txtId.Text != "" & txtNome.Text != "" & txttelefone1.Text != "" & txtTipo.Text != "")
@@ -63,6 +67,7 @@ namespace AgendaEletronica1._0
             }
         }
 
+        // Método para Deixar os Texbox sem nenhum caractere.
         public void TiraValor()
         {
             txtId.Text = "";
@@ -72,5 +77,28 @@ namespace AgendaEletronica1._0
             txttelefone2.Text = "";
             txtcelular.Text = "";
         }
+
+        // Métods para utilização de Eventos
+        private void txtemail_Enter(object sender, EventArgs e)
+        {
+            if (sender is TextBox)
+            {
+                TextBox CorFundo = (TextBox)sender;
+                if (CorFundo.BackColor == SystemColors.Window)
+                {
+                    CorFundo.BackColor = SystemColors.ControlLight;
+                }
+            }
+        }
+
+        private void txttelefone2_Leave(object sender, EventArgs e)
+        {
+            if (sender is TextBox)
+            {
+                TextBox texto = (TextBox)sender;
+                texto.BackColor = SystemColors.Window;
+            }
+        }
+        // Fim dos eventos
     }
 }

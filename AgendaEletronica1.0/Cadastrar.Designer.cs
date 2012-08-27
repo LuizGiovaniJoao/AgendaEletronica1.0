@@ -52,6 +52,8 @@
             this.txtcelular.Name = "txtcelular";
             this.txtcelular.Size = new System.Drawing.Size(126, 20);
             this.txtcelular.TabIndex = 21;
+            this.txtcelular.Enter += new System.EventHandler(this.txtemail_Enter);
+            this.txtcelular.Leave += new System.EventHandler(this.txttelefone2_Leave);
             // 
             // txttelefone2
             // 
@@ -59,6 +61,8 @@
             this.txttelefone2.Name = "txttelefone2";
             this.txttelefone2.Size = new System.Drawing.Size(126, 20);
             this.txttelefone2.TabIndex = 19;
+            this.txttelefone2.Enter += new System.EventHandler(this.txtemail_Enter);
+            this.txttelefone2.Leave += new System.EventHandler(this.txttelefone2_Leave);
             // 
             // label6
             // 
@@ -84,6 +88,8 @@
             this.txttelefone1.Name = "txttelefone1";
             this.txttelefone1.Size = new System.Drawing.Size(126, 20);
             this.txttelefone1.TabIndex = 18;
+            this.txttelefone1.Enter += new System.EventHandler(this.txtemail_Enter);
+            this.txttelefone1.Leave += new System.EventHandler(this.txttelefone2_Leave);
             // 
             // txtemail
             // 
@@ -91,6 +97,8 @@
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(126, 20);
             this.txtemail.TabIndex = 15;
+            this.txtemail.Enter += new System.EventHandler(this.txtemail_Enter);
+            this.txtemail.Leave += new System.EventHandler(this.txttelefone2_Leave);
             // 
             // txtNome
             // 
@@ -98,6 +106,8 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(126, 20);
             this.txtNome.TabIndex = 13;
+            this.txtNome.Enter += new System.EventHandler(this.txtemail_Enter);
+            this.txtNome.Leave += new System.EventHandler(this.txttelefone2_Leave);
             // 
             // txtId
             // 
@@ -105,6 +115,8 @@
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(126, 20);
             this.txtId.TabIndex = 12;
+            this.txtId.Enter += new System.EventHandler(this.txtemail_Enter);
+            this.txtId.Leave += new System.EventHandler(this.txttelefone2_Leave);
             // 
             // label4
             // 
@@ -176,6 +188,8 @@
             this.txtTipo.Size = new System.Drawing.Size(121, 21);
             this.txtTipo.TabIndex = 26;
             this.txtTipo.Text = "Amigos";
+            this.txtTipo.Enter += new System.EventHandler(this.txtemail_Enter);
+            this.txtTipo.Leave += new System.EventHandler(this.txttelefone2_Leave);
             // 
             // button1
             // 
